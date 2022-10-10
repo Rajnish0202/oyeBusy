@@ -4,6 +4,7 @@ import styles from './LandingBanner.module.css';
 
 const LandingBanner = (props) => {
   const [data, setData] = useState(props.heroSection);
+  console.log(setData);
   const { heading, mobBanner, notes, webBanner } = data;
 
   const note = notes.map((note, index) => {

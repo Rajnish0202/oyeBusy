@@ -3,7 +3,6 @@ import styles from './Banner.module.css';
 
 const Banner = (props) => {
   const { banner5: banner } = props.city[0];
-  // console.log(banner);
 
   return (
     <div className={styles.banner}>

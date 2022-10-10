@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import styles from './Spare.module.css';
 import { BsChevronLeft, BsChevronRight, BsFillExclamationCircleFill } from 'react-icons/bs';
 
 const Spare = (props) => {
-  const [spare, setSpare] = useState(props.spare);
-
   const slideLeft = () => {
     let slider = document.getElementById('spare');
     const screen = window.innerWidth;
@@ -40,7 +37,7 @@ const Spare = (props) => {
     slider.scrollLeft = slider.scrollLeft + size;
   };
 
-  const sparePart = spare.map((part, i) => {
+  const sparePart = props.spare.map((part, i) => {
     const { title, spareParts } = part;
     return (
       <div className={styles.spareCard} key={i}>

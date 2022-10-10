@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from 'react';
 import CityForm from '../CityForm/CityForm';
 import styles from './HeroSection.module.css';
 
 const HeroSection = (props) => {
-  const [city, setCity] = useState(props.city[0]);
-  const { heroSection } = city;
+  const { heroSection } = props.city[0];
 
   return (
     <section className={styles.hero}>

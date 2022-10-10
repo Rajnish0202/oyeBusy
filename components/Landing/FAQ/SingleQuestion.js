@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BsPlusLg } from 'react-icons/bs';
 import { FaMinus } from 'react-icons/fa';
 import styles from './SingleQuestion.module.css';

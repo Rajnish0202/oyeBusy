@@ -1,17 +1,14 @@
-import { useState } from 'react';
 import Rating from './Rating';
 import styles from './Reviews.module.css';
 
 const Reviews = (props) => {
-  const [reviews, setReviews] = useState(props.reviews);
-
   let today = new Date();
   const date = String(today.getDate()).padStart(2, '0');
   const month = String(today.getMonth() + 1).padStart(2, '0');
   const year = today.getFullYear();
   today = date + '/' + month + '/' + year;
 
-  const reviewsHtml = reviews.map((review, index) => {
+  const reviewsHtml = props.reviews.map((review, index) => {
     return (
       <div className={styles.review} key={index}>
         <div className={styles.details}>

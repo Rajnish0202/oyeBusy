@@ -4,10 +4,9 @@ import Banner from '../components/Home/Banner/Banner';
 import AboutUrban from '../components/Home/AboutUrban/AboutUrban';
 import Location from '../components/Home/Location/Location';
 import Footer from '../components/Layout/Footer/Footer';
-import { useState } from 'react';
 
 const Home = () => {
-  const [city, setCity] = useState(selectCity);
+  const city = selectCity.map((item) => item);
   return (
     <>
       <HeroSection city={city} />
