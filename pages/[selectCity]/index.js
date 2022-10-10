@@ -12,39 +12,12 @@ const Product = () => {
   const router = useRouter();
   const { selectCity } = router.query;
   const data = landing.find((item) => item.serviceZone === selectCity);
-  // console.log(data);
-
-  const {
-    heroSection,
-    offerBanner,
-    cards,
-    spareParts,
-    banner2,
-    banner1,
-    brands,
-    longDescription,
-    carousel,
-    faq,
-    reviews,
-    internalLinks,
-  } = data;
 
   return (
     <>
-      <LandingBanner heroSection={heroSection} />
-      <OfferBanner offerBanner={offerBanner} />
-      <MainSection
-        cards={cards}
-        spare={spareParts}
-        choose={banner1}
-        safety={banner2}
-        brands={brands}
-        longDescription={longDescription}
-        carousel={carousel}
-        faq={faq}
-        reviews={reviews}
-        internalLinks={internalLinks}
-      />
+      <LandingBanner {...data} />
+      <OfferBanner {...data} />
+      <MainSection {...data} />
       <Footer
         background='#ededed'
         color='#000'
