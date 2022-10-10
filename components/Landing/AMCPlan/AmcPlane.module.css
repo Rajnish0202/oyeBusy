@@ -1,0 +1,228 @@
+.amcPlane {
+  width: 95%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.amcPlane h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.mainAmc {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.amc {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 1rem;
+}
+
+.amcCard {
+  width: 435px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.container {
+  width: 100%;
+  height: 205px;
+  background: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.title {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
+}
+
+.list div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.include {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000;
+}
+
+.amc::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderIcon {
+  background: #2d55a1;
+  color: #fff;
+  border-radius: 100%;
+  padding: 0.5rem;
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.sliderIcon:hover {
+  opacity: 1;
+}
+
+.right {
+  right: 0px;
+}
+
+.left {
+  left: 0px;
+}
+
+.caution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.caution svg {
+  fill: #ea1a1a;
+  color: #fff;
+}
+
+.alert {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .amcCard {
+    width: 360px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .include {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .amcCard {
+    width: 350px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .include {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .amcPlane {
+    width: 100%;
+  }
+
+  .amcPlane h2 {
+    margin-left: 2rem;
+  }
+
+  .right {
+    right: 0px;
+  }
+
+  .left {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .amcCard {
+    width: 310px;
+  }
+  .title {
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .include {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .amcCard {
+    width: 260px;
+  }
+}

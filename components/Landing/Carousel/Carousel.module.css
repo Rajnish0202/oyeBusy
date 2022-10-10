@@ -1,0 +1,62 @@
+.carousel {
+  width: 95%;
+  padding: 1rem;
+  margin: 1rem auto 1rem auto;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #025b5d;
+  margin-bottom: 2rem;
+}
+
+.imageCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.imageCard a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imageCard a img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.imageCard p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 25px;
+  color: #000;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .imageCard {
+    grid-template-columns: none;
+  }
+
+  .heading {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .imageCard p {
+    font-size: 16px;
+  }
+}

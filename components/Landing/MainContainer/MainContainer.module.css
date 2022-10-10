@@ -1,0 +1,23 @@
+.mainContainer {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background: #fff;
+  width: 100%;
+}
+
+.heading {
+  font-family: 'Mulish', sans-serif;
+  width: 800;
+  font-size: 25px;
+  line-height: 31.38px;
+  color: #000;
+  font-style: normal;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 20px;
+  }
+}

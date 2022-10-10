@@ -1,0 +1,51 @@
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.price big {
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: 800;
+  color: #000;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+}
+
+.price small {
+  color: #123ba3;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.btn {
+  background: #123ba3;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #fff;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+@media screen and (max-width: 480px) {
+  .price big {
+    font-size: 22px;
+  }
+
+  .price small {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,32 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.tab {
+  min-width: 120px;
+  background: #544fa9;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+
+.tab {
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%);
+  margin-right: -9px;
+}
+
+.tab:nth-child(1) {
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    display: none;
+  }
+}

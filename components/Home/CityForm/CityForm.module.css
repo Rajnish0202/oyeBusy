@@ -1,0 +1,59 @@
+.form {
+  width: 418px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 30px;
+}
+
+.form p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.form select {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .form {
+    margin-top: 20px;
+    width: 350px;
+  }
+} */
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .form {
+    margin-top: 15px;
+    width: 350px;
+    padding: 1.5rem;
+  }
+
+  .form p {
+    font-size: 18px;
+  }
+
+  .form select {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    width: 100%;
+  }
+}

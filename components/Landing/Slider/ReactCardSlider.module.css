@@ -1,0 +1,90 @@
+.mainSliderContainer {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sliderCard {
+  width: 420px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#slider {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 1rem;
+}
+
+#slider::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderIcon {
+  background: #2d55a1;
+  color: #fff;
+  border-radius: 100%;
+  padding: 0.5rem;
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.sliderIcon:hover {
+  opacity: 1;
+}
+
+.right {
+  right: 0px;
+}
+
+.left {
+  left: 0px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .sliderCard {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .sliderCard {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainSliderContainer {
+    width: 100%;
+  }
+
+  .right {
+    right: 0px;
+  }
+
+  .left {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sliderCard {
+    width: 310px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .sliderCard {
+    width: 260px;
+  }
+}

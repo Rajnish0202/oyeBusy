@@ -1,0 +1,60 @@
+.subheading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 26px;
+  color: #000;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  margin-bottom: 2rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #7c7c7c;
+}
+
+.link:nth-child(1) svg {
+  display: none;
+}
+
+.area button {
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: underline;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .subheading {
+    font-size: 18px;
+  }
+  .link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .area button {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

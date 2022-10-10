@@ -1,0 +1,23 @@
+.faq {
+  width: 95%;
+  margin: 1rem auto 1rem auto;
+  padding: 1rem;
+}
+
+.subheading {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 2rem;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 480px) {
+  .subheading {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,86 @@
+.heroSection {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroSection img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.details {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(20%, -50%);
+}
+
+.details h1 {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.details li {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  list-style-type: disc;
+  padding: 0.5rem 0;
+}
+
+.mobBanner {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .webBanner {
+    display: none;
+  }
+
+  .mobBanner {
+    display: block;
+  }
+
+  .details {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .details h1 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .details li {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .details h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    line-height: 26px;
+  }
+
+  .details li {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .details h1 {
+    font-size: 20px;
+  }
+}

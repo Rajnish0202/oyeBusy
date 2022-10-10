@@ -1,0 +1,86 @@
+.locations {
+  padding: 2rem 5rem;
+  background: #000;
+  color: #fff;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.contactHeading {
+  text-transform: uppercase;
+  color: #56fbff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+  min-width: 200px;
+}
+
+.contactDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.contactDetails p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-style: normal;
+  letter-spacing: 0.08em;
+}
+
+@media screen and (min-width: 1024px) {
+  .contactDetails {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactHeading {
+    font-size: 14px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contactDetails {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .name {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .contactDetails p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .locations {
+    padding: 2rem;
+  }
+}

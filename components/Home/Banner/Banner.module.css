@@ -1,0 +1,22 @@
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mobImg {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .webImg {
+    display: none;
+  }
+
+  .mobImg {
+    display: block;
+  }
+}
